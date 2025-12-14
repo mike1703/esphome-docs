@@ -27,6 +27,7 @@ The following table shows the currently supported models of Vbus devices.
 | Dux H3214 | deltasol_bs_2009 | 427B | Pump 2 unsupported |
 | DeltaSol C | deltasol_c | 4212 | |
 | DeltaSol CS2 | deltasol_cs2 | 1121 | |
+| DeltaSol CS4 | deltasol_cs4 | 1122 | Citrin Solar CS 1.3 |
 | DeltaSol CS Plus | deltasol_cs_plus | 2211 | |
 
 The `Config Value` should be used for the `model` parameter in your `sensor` and `binary_sensor` entries.
@@ -125,6 +126,7 @@ Supported sensors:
 - for **deltasol_c**: `temperature_1`, `temperature_2`, `temperature_3`, `temperature_4`, `pump_speed_1`, `pump_speed_2`, `operating_hours_1`, `operating_hours_2`, `heat_quantity`, `time`.
 - for **deltasol_cs2**: `temperature_1`, `temperature_2`, `temperature_3`, `temperature_4`, `pump_speed`, `operating_hours`, `heat_quantity`, `version`.
 - for **deltasol_cs_plus**: `temperature_1`, `temperature_2`, `temperature_3`, `temperature_4`, `temperature_5`, `pump_speed_1`, `pump_speed_2`, `operating_hours_1`, `operating_hours_2`, `heat_quantity`, `time`, `version`, `flow_rate`.
+- for **deltasol_cs_plus**: `temperature_1`, `temperature_2`, `temperature_3`, `temperature_4`, `temperature_5`, `pump_speed_1`, `pump_speed_2`, `operating_hours_1`, `operating_hours_2`, `heat_quantity`, `time`, `version`, `flow_rate`.
 
 All sensors are *Optional* and support all other options from [Sensor](/components/sensor).
 
@@ -175,6 +177,7 @@ binary_sensor:
   - **`deltasol_bs_2009`**: `sensor1_error`, `sensor2_error`, `sensor3_error`, `sensor4_error`, `frost_protection_active`.
   - **`deltasol_c`**: `sensor1_error`, `sensor2_error`, `sensor3_error`, `sensor4_error`.
   - **`deltasol_cs2`**: `sensor1_error`, `sensor2_error`, `sensor3_error`, `sensor4_error`.
+  - **`deltasol_cs4`**: `sensor1_error`, `sensor2_error`, `sensor3_error`, `sensor4_error`.
   - **`deltasol_cs_plus`**: `sensor1_error`, `sensor2_error`, `sensor3_error`, `sensor4_error`.
   - **`custom`**: See below.
 
